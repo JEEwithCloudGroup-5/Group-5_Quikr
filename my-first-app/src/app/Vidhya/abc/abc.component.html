@@ -1,0 +1,115 @@
+
+
+<div class="slide1">
+
+    <carousel>
+        <slide>
+          <img src="nature3.ico" alt="first slide" style="display: block;">
+        </slide>
+        <slide>
+          <img src="nature1.ico" alt="second slide" style="display: block; ;">
+        </slide>
+        <slide>
+          <img src="nature2.ico" alt="third slide" style="display: block;  ">
+        </slide>
+      </carousel>
+    </div>
+
+
+      <div class="cen">
+
+  
+
+
+<!-- <alert type="success">hello</alert> -->
+<!-- <button type="button" class="btn btn-primary">
+    Single Button
+  </button> -->
+
+
+  <h3>
+      <p class="text-primary"> Hello!
+{{name}}
+</p>
+</h3>
+
+
+
+<ul>
+<li><h3><p  class="text-success" >{{age}}</p></h3></li>
+<li><h3> <p class="text-info">{{email}}</p></h3></li>
+<li><h3><p class="text-danger">{{address.city}} {{address.state}}</p></h3></li>
+</ul>
+
+<h1>Changing details</h1>
+
+<form>
+    <div class="form-group row">
+        <div class="col-xs-2">
+    <label for="ex1"><p class="text-info">name:</p></label>
+     <input type="text" [(ngModel)]="name" name="name" class="form-control" id="ex1">
+    
+    </div>
+  </div>
+    
+    <div class="form-group row">
+    <div>
+        <label for="age"><p class="text-info">age:</p></label>
+         <input type="number" [(ngModel)]="age" name="age" class="form-control" id="ex1">
+        </div>
+        </div>
+       
+        <div class="form-group row">
+    <div>
+    <label for="email"><p class="text-info">email:</p></label>
+     <input type="text" [(ngModel)]="email" name="email" class="form-control" id="ex1">
+    </div>
+  </div>
+    
+  
+  <div class="form-group row">
+    <div>
+        <label for="city"><p class="text-info">city:</p></label>
+         <input type="text" [(ngModel)]="address.city" name="address.city" class="form-control" id="ex1">
+        </div>
+      </div>
+
+
+        <div class="form-group row">
+        <div>
+            <label for="state"><p class="text-info">state:</p></label>
+             <input type="text" [(ngModel)]="address.state" name="address.state" class="form-control" id="ex1">
+            </div>
+           
+          </div>
+    
+    </form> 
+    <form (submit)="onAdd(hobby.value)">
+        <div class="form-group row">
+          <div class="col-xs-3">
+          <label for="hobby"> Enter Hobby:</label>
+          <input type="text" #hobby  class="form-control">
+        </div>
+      </div>
+    </form>
+    
+
+<h1>Hobbies</h1><!-- <button (click)="onClick()">ClickMe</button> -->
+<button (click)="onClick()" class="btn btn-info">ClickMeToAddHoobie</button>
+<br/>
+<br/>
+
+
+
+
+<ul>
+  <li *ngFor="let hobby of hobbies; let i=index">
+    {{i+1}}) {{hobby}}
+   
+    <button (click)="onDelete(hobby)" class="btn btn-danger btn-sm">x</button>
+    <br>
+    <br>
+  </li>
+</ul>
+
+</div>

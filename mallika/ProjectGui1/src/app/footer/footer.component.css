@@ -1,0 +1,21 @@
+footer {
+    background-color: #3b8dbd;
+    bottom: 0%
+}
+
+#justpushtobottom {
+height: 82vh;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+ }
+
+ #nav-item nav-link{
+     
+ }

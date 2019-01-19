@@ -1,0 +1,21 @@
+Filter By: <input type="text" [(ngModel)]="searchText">
+
+<div class="container">
+<table class="table table-bordered table-hover">
+  
+   <th>movieName</th>
+     <th>actor</th>
+     <th>actoress</th>
+    <th>genre</th>
+
+  
+  <tbody>
+    <tr *ngFor="let c of movies | movieSearch:searchText">
+    <td>{{c.movieName}}</td>
+    <td>{{c.actor}}</td>
+    <td>{{c.actoress}}</td>
+    <td>{{c.genre}}</td>
+  </tr>
+  </tbody>
+</table>
+</div>

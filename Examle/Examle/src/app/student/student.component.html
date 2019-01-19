@@ -1,0 +1,31 @@
+
+<div class="container">
+<table class="table">
+  <thead>
+    <tr class="table-success">FirstName<td>{{firstName}}</td></tr>
+  
+    <tr  class="table-danger">lastName<td>{{lastName}}</td></tr>
+   
+    <tr  class="table-info">gender<td>{{gender}}</td></tr>
+  
+    <tr class="table-warning"> qualification<td>{{qualification}}</td></tr>
+   
+  </thead>
+  
+ 
+</table>
+
+<div class="container">
+    <div class="form-group row">
+        <div class="col-xs-2"> 
+  	    <h5>Two way binding Example</h5>  
+  	    Enter you Name:  <input  type="text" [(ngModel)]="firstName"  name="firstName" class="form-control"   />  
+  	    <br/><br/>  
+ 	    <span> WelCome {{firstName}} ! </span>  
+     
+</div>
+
+</div>
+</div>
+     <button (click)="onClick()"   class="btn btn-danger">ClickMe</button>
+    

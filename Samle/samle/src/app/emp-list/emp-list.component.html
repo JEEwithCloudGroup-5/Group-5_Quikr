@@ -1,0 +1,41 @@
+<p>
+  emp-list works!
+</p>
+
+<div class="container">
+<table class="table">
+
+<thead>
+
+<tr class="table-success">
+  <td>EmpId</td>
+  <td> name</td>
+  <td>email</td>
+  <td>phone</td>
+  <td>salary</td>
+  <td>appraisalRating</td>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr *ngIf="employess.length==0"  class="table-danger">
+<td colspan="6">no of records found</td>
+
+</tr>
+
+<tr *ngFor="let emp of employess" class="table-danger">
+  <td class="info">{{emp.empId}}</td>
+  <td class="active">{{emp.name|lowercase}}</td>
+  <td>{{emp.email|uppercase}}</td>
+<td>{{emp.phone}}</td>
+  <td>{{emp.salary}}</td>
+  <td>{{emp.appraisalRating}}</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+  

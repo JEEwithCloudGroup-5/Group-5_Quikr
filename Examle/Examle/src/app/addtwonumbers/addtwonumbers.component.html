@@ -1,0 +1,28 @@
+
+  <h1>Add Two Numbers</h1> 
+  <div class="container">
+  <div class="form-group row">
+      <div class="col-xs-4">
+        <label for="ex1">Number1:</label>
+     <input type="number"  class="form-control" id="ex1"  [(ngModel)]="number1"/><br/> 
+     
+     <label for="ex1">Number2:</label>
+     <input type="number"  class="form-control"   id="ex1" [(ngModel)]="number2"/><br/>
+    </div>
+  </div> 
+  
+  <div class="btn-group">
+     <button (click)="add()"   class="btn  btn-success"> Add</button>  
+     <button (click)="sub()"  class="btn  btn-info"> sub</button>  
+     <button (click)="mul()"   class="btn  btn-warning"> mul</button>
+     <button (click)="div()"   class="btn  btn-danger"> div</button>
+    </div>
+ 
+</div> 
+     
+
+
+
+
+	<h1>ans is {{ans}}</h1> 
+
