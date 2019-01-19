@@ -18,7 +18,7 @@ import com.quickr.model.UserLoginAccount;
 import com.quickr.model.UserRegistrationAccount;
 import com.quickr.service.UserService;
 
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="http://localhost:4008")
 @RestController
 @RequestMapping("/quickr")
 public class UserController {
